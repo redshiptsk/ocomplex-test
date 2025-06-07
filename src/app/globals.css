@@ -1,0 +1,95 @@
+:root {
+  --background: #222222;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 13px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+font-weight: 400;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+button {
+  height: 68px;
+  border: 0px;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;  
+  background: #222;
+  color: #fff;  
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #333;
+}
+
+input {
+  height: 68px;
+  background-color: #222;
+  border: 0px;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+input:hover {
+  background: #333;
+}
+input::placeholder {
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
